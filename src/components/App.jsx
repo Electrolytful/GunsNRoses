@@ -1,6 +1,7 @@
 import React from "react";
 import Intro from "./Intro";
 import SongList from "./SongList";
+import "../assets/css/App.css";
 
 const App = () => {
   const intro =
@@ -8,8 +9,10 @@ const App = () => {
 
   return (
     <>
-      <Intro name="Guns'N'Roses" type="Rock" intro={intro} />
-      <SongList />
+      <div className="container">
+        <Intro name="Guns'N'Roses" type="Rock Band" intro={intro} />
+        <SongList />
+      </div>
     </>
   );
 };

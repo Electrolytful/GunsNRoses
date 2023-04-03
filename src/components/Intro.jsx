@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/css/Intro.css";
 
 const Intro = (props) => {
   const name = props.name;
@@ -7,9 +8,9 @@ const Intro = (props) => {
 
   return (
     <div className="intro-container">
-      <h1 className="band_name">{name}</h1>
-      <h2 className="band_type">{type}</h2>
-      <p className="band_intro">{intro}</p>
+      <h1 className="band-name">{name}</h1>
+      <h2 className="band-type">{type}</h2>
+      <p className="band-intro">{intro}</p>
     </div>
   );
 };

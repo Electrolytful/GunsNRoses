@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display+SC&display=swap');
+
+.song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-container {
+    margin-bottom: 100px;
+    width: 300px;
+}
+
+.liked {
+    border: 2px solid #FFBB00;
+    border-radius: 20px;
+}
+
+#liked-button {
+    background-color: #D5C1BA;
+    border: 3px solid #FFBB00;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Playfair Display SC', serif;
+    height: 36px;
+    line-height: 27px;
+    min-width: 100%;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+}
+
+#liked-button:hover {
+  border-color: #108C0F;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
