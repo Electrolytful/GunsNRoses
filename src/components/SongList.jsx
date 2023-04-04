@@ -3,16 +3,25 @@ import Song from "./Song";
 import "../assets/css/SongList.css";
 
 const SongList = ({ songs, setSongs }) => {
+  const likeSong = (song) => {
+    setSongs(
+      songs.map((item) => {
+        if (item === song) {
+          return {
+            ...item,
+            liked: !item.liked,
+          };
+        }
+        return item;
+      })
+    );
+  };
+
   return (
     <div className="songlist-container">
-      {console.log(songs)}
-      {songs.map((item, i) => {
-        return (
-          <div className="song">
-            <Song name={item.name} release={item.release} cover={item.cover} />
-          </div>
-        );
-      })}
+      {songs.map((song, i) => (
+        <Song key={i} song={song} likeSong={likeSong} />
+      ))}
     </div>
   );
 };

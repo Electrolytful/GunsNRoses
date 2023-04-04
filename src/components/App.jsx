@@ -11,24 +11,28 @@ const App = () => {
       release: "28/09/1987",
       cover:
         "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg",
+      liked: false,
     },
     {
       name: "Sweet Child o Mine",
       release: "21/06/1988",
       cover:
         "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg",
+      liked: false,
     },
     {
       name: "November Rain",
       release: "18/02/1992",
       cover:
         "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg",
+      liked: false,
     },
     {
       name: "Paradise City",
       release: "21/07/1987",
       cover:
         "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg",
+      liked: false,
     },
   ]);
 

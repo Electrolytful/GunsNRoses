@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../assets/css/Form.css'
+import "../assets/css/Form.css";
 
 const Form = ({ songs, setSongs }) => {
   const [name, setName] = useState("");
@@ -7,11 +7,14 @@ const Form = ({ songs, setSongs }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setName("");
+    setDate("");
     const song = {
       name: name,
       release: date,
       cover:
         "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg",
+      liked: false
     };
     setSongs([...songs, song]);
   };
@@ -28,10 +31,10 @@ const Form = ({ songs, setSongs }) => {
     <div className="form-container">
       <form action="submit">
         <label htmlFor="song-name">Song Name</label>
-        <input type="text" id="song-name" onChange={handleName} />
+        <input value={name} type="text" id="song-name" onChange={handleName} />
 
         <label htmlFor="song-date">Release Date</label>
-        <input type="text" id="song-date" onChange={handleDate} />
+        <input value={date} type="text" id="song-date" onChange={handleDate} />
 
         <button type="submit" onClick={handleSubmit}>
           Submit
